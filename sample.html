@@ -55,19 +55,19 @@
         scene.add(box1);
         //球
         var sphereGeometry = new THREE.SphereGeometry( 0.3, 32, 32 ); 
-        var sphereMaterial = new THREE. MeshPhongMaterial( {color: 0x0000ff,wireframe: true });
+        var sphereMaterial = new THREE. MeshPhongMaterial( {color: 0x52E252,wireframe: true });
         var sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
         sphere.position.set(0.9,0,0 );
         scene.add(sphere);
         //錐
         var cylinderGeometry = new THREE.CylinderGeometry( 0.3, 0.3, 0.3,5);
-        var cylinderMaterial = new THREE.MeshPhongMaterial( {color: 0x0000ff} );
+        var cylinderMaterial = new THREE.MeshPhongMaterial( {color: 0xFF5675} );
         var cylinder = new THREE.Mesh( cylinderGeometry, cylinderMaterial );
         cylinder.position.set( -0.3, 0, 0 );
         scene.add( cylinder );
         //ドーナッツ
         var torusGeometry = new THREE.TorusGeometry( 0.3, 0.1, 6, 12 ); 
-        var torusMaterial = new THREE. MeshPhongMaterial( { color: 0x0000ff,wireframe: true } );
+        var torusMaterial = new THREE. MeshPhongMaterial( { color: 0xFFE13C,wireframe: true } );
         var torus = new THREE.Mesh( torusGeometry, torusMaterial );
         torus.position.set( -0.9, 0, 0);
         scene.add( torus );
