@@ -60,7 +60,7 @@
         sphere.position.set(0.9,0,0 );
         scene.add(sphere);
         //錐
-        var cylinderGeometry = new THREE.CylinderGeometry( 0.3, 0.05, 5 );
+        var cylinderGeometry = new THREE.CylinderGeometry( 0.3, 0.05, 0.6 );
         var cylinderMaterial = new THREE.MeshPhongMaterial( {color: 0x0000ff} );
         var cylinder = new THREE.Mesh( cylinderGeometry, cylinderMaterial );
         cylinder.position.set( -0.3, 0, 0 );
@@ -81,8 +81,6 @@
           // 回転させる
           box1.rotation.x += 0.01;
           box1.rotation.y += 0.01;
-          sphere.rotation.x += 0.01;
-          sphere.rotation.y += 0.01;
           cylinder.rotation.x += 0.01;
           cylinder.rotation.y += 0.01;
           box4.rotation.x += 0.01;
